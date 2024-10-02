@@ -228,3 +228,14 @@ VALUES (
         'White',
         5
     );
+UPDATE public.inventory
+SET inv_decription = REPLACE(
+        'Do you have 6 kids and like to go offroading? The Hummer gives you the small interiors with an engine to get you out of any muddy or rocky situation.',
+        'small interiors',
+        'a huge interior'
+    )
+WHERE inv_id = 10;
+UPDATE public.inventory
+SET inv_image = REPLACE(inv_image, '/images', '/images/vehicles');
+UPDATE public.inventory
+SET inv_thumbnail = REPLACE(inv_thumbnail, '/images', '/images/vehicles');
