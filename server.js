@@ -30,8 +30,8 @@ app.get("/", function(req, res){res.render("index", {title: "Home"})})
  * Local Server Information
  * Values from .env (environment) file
  *************************/
-const port = 3000
-const host = 'localhost'
+const port = process.env.PORT
+const host = process.env.HOST
 
 /* ***********************
  * Log statement to confirm server operation
