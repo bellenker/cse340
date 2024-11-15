@@ -4,3 +4,127 @@
 *:after {
   box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: grid;
+  background: url('../images/site/small_check.jpg');
+  justify-content: center;
+}
+
+#wrapper{
+  display:grid;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  border: 5px solid #4ec6d6;
+}
+
+.cse {
+  display: flex;
+}
+.cse.motors {
+  text-align: left;
+}
+
+.cse.tools {
+  text-align: right;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #000;
+}
+ 
+h1 {
+  margin: 0;
+  text-align: left;
+}
+ 
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+ 
+.tools {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+ 
+.car-box {
+  display: flex;
+  align-items: right;
+  justify-content: space-around;
+}
+
+.car-box image {
+
+}
+ 
+.details h2 {
+  color: #4ec6d6;
+}
+ 
+.own-button {
+  background-color: #4ec6d6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+ 
+.own-button:hover {
+  background-color: #005bb5;
+}
+ 
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  border: 2px solid #000;
+}
+ 
+.upgrades, .reviews {
+  width: 45%;
+}
+ 
+.upgrades h2, .reviews h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+ 
+.parts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+ 
+.parts img {
+  width: 50px;
+  margin-right: 10px;
+}
+ 
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 2px solid #000;
+  margin-top: 20px;
+}
